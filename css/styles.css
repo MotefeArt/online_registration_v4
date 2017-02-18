@@ -87,21 +87,30 @@ input[id="state"],
 .select {
   display: inline-block;
   float: right;
-  width: 60%;
+  width:50%;
   padding: 1em 0;
   border: none;
   border-radius: 5px;
   background: lightgrey;
 }
 
+input[type="text"]:placeholder-shown,
+input[type="email"]:placeholder-shown {
+  text-align: right;
+}
+
 input[id="zip"] {
-  float: right;
-  width: 60%;
+
+  width: 25%;
   padding: 1em 0;
   border: none;
   border-radius: 5px;
   background: lightgrey;
-  margin-right: 4.6em;
+
+}
+
+.zip {
+  width:49%;
 }
 
 input[type="text"]:focus,
@@ -123,6 +132,7 @@ input[type="radio"] {
 label {
   display: inline-block;
   margin-top: 1em;
+  width: 45%;
 }
 
 .news {
@@ -242,6 +252,11 @@ hr {
   input[type="email"]:focus,
   .select:focus {
     background-color: #fff;
+  }
+
+  input[type="text"]:placeholder-shown,
+  input[type="email"]:placeholder-shown {
+    text-align: right;
   }
 
   input[type="text"],
