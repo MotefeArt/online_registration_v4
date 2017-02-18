@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>online registration newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+    <header>
+      <h2 class="name">The Code Review</h2>
+    </header>
+    <div class="main-wrapper">
+      <h2 class="_name">Singup for our newsletter</h2>
+    <p id="get">Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <div class="off ">
+      <p class="offset"><p>
+    </div>
+    <div class="of">
+      <p class="ofset"><p>
+    </div>
+    <div class="wrapper">
+      <form action="index.html" method="post" class="form">
+        <fieldset class="fieldset">
+          <legend class="legend">Contact Information</legend>
+        <div class="input">
+          <label for="name">Full Name </label>
+          <input required type="text"  name="user_name" id="name" placeholder="Required">
+        </div>
+        <div class="input">
+          <label for="email">Email Address </label>
+          <input required type="email"  name="user_email" id="email" placeholder="Required">
+        </div>
+        <div class="input">
+          <label for="phone">Phone Number </label>
+          <input type="text"  name="user_phone" id="phone"><br>
+        </div>
+        <div class="input">
+          <label for="address">Street Address </label>
+          <input type="text"  name="user_address" id="address"><br>
+        </div>
+        <div class="input">
+          <label for="city">City </label>
+          <input type="text" name="user_city" id="city"><br>
+        </div>
+        <div class="input">
+          <label for="state" class="st">State </label>
+          <select id="state" name="user_state" class="select">
+            <optgroup label="Europe">
+              <option value="macedonia">Macedonia</option>
+              <option value="serbia">Serbia</option>
+              <option value="france">France</option>
+              <option value="Slovenia">Slovenia</option>
+           </optgroup>
+           <optgroup label="Asia">
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+          </optgroup>
+          <optgroup label="North Americas & Canada">
+            <option value="United States">USA</option>
+            <option value="Canada">Canada</option>
+          </optgroup>
+        </select>
+      </div>
+          <div class="input">
+            <label class="zip" for="zip">Zip Code </label><br class="br">
+            <input type="text" size="15" name="user_zip" id="zip">
+          </div>
+        </fieldset>
+        <hr>
+        <fieldset class="fieldset">
+          <legend class="legend">Newsletter</legend>
+          <p class="p">Select te newsletters you would like to recieve</p>
+          <div class="checkbox">
+            <input type="checkbox" value="intrest_html" name="html_news" id="html"><label for="html"> HTML News</label><br>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value="intrest_css" name="css_news" id="css"><label for="css"> CSS News</label><br>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value="intrest_javascript" name="js_news" id="js"><label for="js"> Javascript News</label><br>
+          </div>
+        <div class="news">
+          <label >Newsletter format</label>
+        </div>
+          <div class="radio">
+            <input type="radio" name="format" id="html_r" value="html"><label for="html_r"> HTML</label><br>
+          </div>
+          <div class="radio">
+            <input type="radio" name="format" id="plain" value="plain"><label for="plain"> Plain Text</label>
+          </div>
+          <p class="p">Other topics you'd like to hear about</p>
+           <div class="textarea">
+            <textarea  id="topic" name="user_topic"></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Sign Up</button>
+          </div>
+        </fieldset>
+        <p class="copyr">Copyright The Code Review</p>
+      </form>
+    </div>
+  </body>
+</html>

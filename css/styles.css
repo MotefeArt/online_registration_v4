@@ -1,0 +1,312 @@
+/** Base style**/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  color: lightgrey;
+}
+
+p,
+label {
+  color: grey;
+}
+
+header {
+  background: black;
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+}
+
+.br {
+  display: none;
+}
+
+#zip {
+  width: 40%;
+}
+
+
+.main-wrapper,
+.wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+.main-wrapper {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+#get {
+  color: lightgrey;
+}
+
+.ofset {
+  width: 50%;
+  border-bottom: 10px;
+  border-bottom-style: double;
+  margin: auto;
+}
+
+.fieldset {
+  border: 0;
+}
+
+.form,
+fieldset {
+  display: inline-block;
+  width: 100%;
+}
+
+.legend {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.input {
+  padding: 1em 0;
+}
+
+input[id="name"],
+input[id="email"],
+input[id="phone"],
+input[id="address"],
+input[id="city"],
+input[id="state"],
+.select {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  padding: 1em 0;
+  border: none;
+  border-radius: 5px;
+  background: lightgrey;
+}
+
+input[id="zip"] {
+  float: right;
+  width: 60%;
+  padding: 1em 0;
+  border: none;
+  border-radius: 5px;
+  background: lightgrey;
+  margin-right: 4.6em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.select:focus {
+  background-color: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 1em;
+}
+
+.checkbox label,
+.radio label {
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.news {
+  padding-top: 1em;
+}
+
+textarea {
+  width: 100%;
+  padding-bottom: 3em;
+  border: 0;
+  border-radius: 5px;
+  background: lightgrey
+}
+
+button {
+  display: inline;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+
+  padding: .5em 0;
+  font-weight: bold;
+  background: #00c77b;
+  color: #fff;
+}
+
+.btn {
+  font-size:  1.3em;
+  padding: 0 0 .5em 0;
+  margin-top: 1em;
+}
+
+.copyr {
+  text-align: center;
+  margin-top: 0;
+  font-style: italic;
+}
+
+
+@media (max-width: 759px) {
+
+header {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+}
+
+.p {
+  margin-top: 0;
+}
+
+.form,
+.wrapper {
+  width: 100%;
+}
+
+.offset {
+
+  width: 95%;
+  border-bottom: 10px;
+  border-bottom-style: double;
+  margin: auto;
+}
+
+.ofset {
+  display: none;
+}
+
+hr {
+  width: 95%;
+  margin: auto;
+}
+
+.main-wrapper {
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+}
+
+._name {
+  padding-top: 1em;
+  margin-top: 0;
+  color: black;
+  font-size: 1.3em;
+}
+
+  #get {
+    margin: 1em;
+  }
+
+  .legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: black;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-left: .5em;
+  }
+
+  .fieldset {
+    margin-top: 1em;
+    border: 0;
+  }
+
+  .input {
+    display: block;
+    margin: .5em;
+  }
+
+  input[type=text]:focus,
+  input[type="email"]:focus,
+  .select:focus {
+    background-color: #fff;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .select {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em 0;
+    background: lightgrey;
+    border-radius: 5px;
+    border: 0;
+  }
+
+  .zip {
+    padding-bottom: 1em;
+  }
+
+  #zip {
+    width: 100%;
+    margin-top: .5em;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin: 1em 1em 1em 0;
+  }
+
+  .p {
+    padding-top: 1em;
+  }
+
+
+  .textarea {
+    width: 100%;
+    padding-bottom: 2em;
+  }
+
+  textarea {
+    width: 100%;
+    padding-bottom: 5em;
+    background: lightgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+  font-size:  2em;
+  padding: 0 0 .5em 0;
+  margin-top: 0;
+}
+
+button {
+  display: inline;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: .5em 0;
+  font-weight: bold;
+  background: #00c77b;
+  color: #fff;
+}
+
+.copyr {
+  text-align: center;
+  margin-top: 0;
+}
+
+}
