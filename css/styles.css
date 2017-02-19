@@ -94,11 +94,6 @@ input[id="state"],
   background: lightgrey;
 }
 
-input[type="text"],
-input[type="email"] {
-  text-align: right;
-}
-
 input[id="zip"] {
 
   width: 25%;
@@ -254,10 +249,6 @@ hr {
     background-color: #fff;
   }
 
-  input[type="text"],
-  input[type="email"]{
-    text-align: right;
-  }
 
   input[type="text"],
   input[type="email"],
