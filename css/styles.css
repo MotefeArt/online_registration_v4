@@ -94,8 +94,8 @@ input[id="state"],
   background: lightgrey;
 }
 
-input[type="text"]:placeholder-shown,
-input[type="email"]:placeholder-shown {
+input[type="text"],
+input[type="email"] {
   text-align: right;
 }
 
@@ -254,8 +254,8 @@ hr {
     background-color: #fff;
   }
 
-  input[type="text"]:placeholder-shown,
-  input[type="email"]:placeholder-shown {
+  input[type="text"],
+  input[type="email"]{
     text-align: right;
   }
 
