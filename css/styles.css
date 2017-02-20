@@ -9,310 +9,190 @@ body {
   color: lightgrey;
 }
 
-p,
+.p,
 label {
   color: grey;
 }
 
-header {
-  background: black;
-  width: 100%;
-  padding: 1.5em;
-  text-align: center;
-}
-
-.name {
-  margin: 0;
-}
-
-.br {
-  display: none;
-}
-
-#zip {
-  width: 40%;
-}
-
-
-.main-wrapper,
-.wrapper {
-  width: 50%;
-  margin: auto;
-}
-
-.main-wrapper {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
-}
-
-#get {
-  color: lightgrey;
-}
-
-.ofset {
-  width: 50%;
-  border-bottom: 10px;
-  border-bottom-style: double;
-  margin: auto;
-}
-
-.fieldset {
-  border: 0;
-}
-
-.form,
-fieldset {
-  display: inline-block;
-  width: 100%;
-}
-
-.legend {
-  font-size: 1em;
-  font-weight: bold;
-  color: black;
-}
-
-.input {
-  padding: 1em 0;
-}
-
-input[id="name"],
-input[id="email"],
-input[id="phone"],
-input[id="address"],
-input[id="city"],
-input[id="state"],
-.select {
-  display: inline-block;
-  float: right;
-  width:50%;
-  padding: 1em 0;
-  border: none;
-  border-radius: 5px;
-  background: lightgrey;
-}
-
-input[id="zip"] {
-
-  width: 25%;
-  padding: 1em 0;
-  border: none;
-  border-radius: 5px;
-  background: lightgrey;
-
-}
-
-.zip {
-  width:49%;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-.select:focus {
-  background-color: #fff;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 1em;
-}
-
-.checkbox label,
-.radio label {
-  font-weight: bold;
-}
-
-label {
-  display: inline-block;
-  margin-top: 1em;
-  width: 45%;
-}
-
-.news {
-  padding-top: 1em;
-}
-
-textarea {
-  width: 100%;
-  padding-bottom: 3em;
-  border: 0;
-  border-radius: 5px;
-  background: lightgrey
-}
-
-button {
-  display: inline;
-  width: 100%;
-  border: 0;
-  border-radius: 5px;
-
-  padding: .5em 0;
-  font-weight: bold;
-  background: #00c77b;
-  color: #fff;
-}
-
-.btn {
-  font-size:  1.3em;
-  padding: 0 0 .5em 0;
-  margin-top: 1em;
-}
-
-.copyr {
-  text-align: center;
-  margin-top: 0;
-  font-style: italic;
-}
-
-
-@media (max-width: 759px) {
-
-header {
-  width: 100%;
-  background: black;
-  color: white;
-  padding: 2em;
-  text-align: center;
-}
-
-.name {
-  margin: 0;
-}
-
-.p {
-  margin-top: 0;
-}
-
-.form,
-.wrapper {
-  width: 100%;
-}
-
-.offset {
-
-  width: 95%;
-  border-bottom: 10px;
-  border-bottom-style: double;
-  margin: auto;
-}
-
-.ofset {
-  display: none;
-}
-
-hr {
-  width: 95%;
-  margin: auto;
-}
-
-.main-wrapper {
-  width: 100%;
-  padding-top: 1em;
-  text-align: center;
-}
-
-._name {
-  padding-top: 1em;
-  margin-top: 0;
-  color: black;
-  font-size: 1.3em;
-}
-
-  #get {
-    margin: 1em;
+  header {
+    width: 100%;
+    background: #00c77b;
+    color: white;
+    padding: 2em;
+    text-align: center;
+	font-size: 1.2em;
+  }
+  
+  .fieldset {
+	  border: none;
+  }
+  
+  .name{
+    margin: 0;
   }
 
   .legend {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: black;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    margin-left: .5em;
+	  display: inline-block;
+	  font-size: 1.2em;
+	  font-weight: bold;
+	  color: black;
+	  padding-top: 1em;
   }
-
-  .fieldset {
-    margin-top: 1em;
-    border: 0;
-  }
-
-  .input {
-    display: block;
-    margin: .5em;
-  }
-
-  input[type=text]:focus,
-  input[type="email"]:focus,
-  .select:focus {
-    background-color: #fff;
-  }
-
-
+  
   input[type="text"],
   input[type="email"],
-  .select {
-    width: 100%;
-    margin: 1em 0;
-    padding: 1em 0;
-    background: lightgrey;
-    border-radius: 5px;
-    border: 0;
+  input[type="tel"],
+  input[type="number"],
+  .select,
+  textarea  {
+	  background: #dcfff3;
+	  border: none;
+	  border-radius: 5px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="number"]:focus,
+  .select:focus,
+  textarea:focus  {
+	  background: #fff;
+  }
+  
+  input:hover,
+  textarea:hover,
+  .select:hover   {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ================================= 
+   Mobile ver.
+==================================== */
+
+@media (min-width: 320px) {
+
+  ._name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+	padding-top: .5em;
+  }
+  
+  #get {
+	  margin: 1em;
+  }
+  
+  .cont {
+	  margin-bottom: 1em;
   }
 
-  .zip {
-    padding-bottom: 1em;
+  .main-wrapper {
+    display: inline;
+    text-align: center;
   }
-
-  #zip {
-    width: 100%;
-    margin-top: .5em;
+      
+ .ofset {
+    width: 90%;
+    border-bottom: 10px;
+    border-bottom-style: double;
+    margin: auto;
+	padding-top: 1em;
   }
-
-  input[type="checkbox"],
-  input[type="radio"] {
-    margin: 1em 1em 1em 0;
+    
+  .input {
+	  margin: .5em 0;
   }
-
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  .select,
+  textarea  {
+	  width: 100%;
+	  margin: .5em 0 1em 0;
+	  padding: 1em 0;
+  }
+  
+  input[id="zip"]{
+	width: 50%;	
+  }
+    
   .p {
-    padding-top: 1em;
+	  display: block;
+	  padding: 1em 0;
   }
-
-
-  .textarea {
-    width: 100%;
-    padding-bottom: 2em;
+  
+  hr {
+	  width: 95%;
   }
+  
+  .checkbox,
+  .radio {
+	  margin-left: .5em;
+	  margin-bottom: 1em;
+  }
+  
+  .checkbox label {
+	  padding-left: .5em;
+  }
+  
+  .btn button {
+	  display: inline;
+	  width: 100%;
+	  margin-top: 1em;
+	  padding: 1em 0;
+	  background: #00c77b;
+	  color: #fff;
+	  border: none;
+	  border-radius: 5px;
+  }
+  
+  .copyr {
+	  text-align: center;
+  }
+ }
+ 
+ 
+ /* ================================= 
+   Tablet/Desctop ver.
+==================================== */
 
-  textarea {
-    width: 100%;
-    padding-bottom: 5em;
-    background: lightgrey;
-    border: none;
-    border-radius: 5px;
+@media (min-width: 768px){
+
+
+.fieldset {
+	display: block;
+	width: 50%;
+	margin: auto;
 }
 
-.btn {
-  font-size:  2em;
-  padding: 0 0 .5em 0;
-  margin-top: 0;
+.input {
+	display: block;
+	width: 100%;
 }
 
-button {
-  display: inline;
-  width: 100%;
-  border: 0;
-  border-radius: 5px;
-  padding: .5em 0;
-  font-weight: bold;
-  background: #00c77b;
-  color: #fff;
+.input label {
+	display: inline-block;
+	width: 33%;
 }
 
-.copyr {
-  text-align: center;
-  margin-top: 0;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+.select {
+	display: inline-block;
+	width: 65%;
 }
 
+.br {
+	display: none;
 }
+
+hr,
+.ofset {
+	width: 50%;
+}
+}
+ 
